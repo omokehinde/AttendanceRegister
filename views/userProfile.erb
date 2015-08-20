@@ -1,0 +1,22 @@
+<h3> List of present users </h3>
+		
+	<table>
+
+		<tr>
+			<th>s/n</th>
+			<th>Name</th>
+			<th>Surname</th>
+			<th>E-mail</th>
+			<th>Date & Time</th>
+		</tr>
+			<% @user1.each do |user| %>
+	<tr>	
+		<td> <label><%= user.id %> </label> </td> 
+		<td> <label><%= user.name %> </label> </td> 
+		<td><label><%= user.surname %> </label> </td>  
+		<td> <label><%= user.email %> </label> </td> 
+		<td> <label><%= user.signin_time %> </label> </td> 
+		<% end %> 
+	</tr>
+</table>
+
